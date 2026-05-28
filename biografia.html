@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografía | Adrián Cruz Flautista</title>
+    <style>
+        :root {
+            --azul-oscuro: #0f172a;
+            --azul-medio: #1e293b;
+            --crema-fondo: #fcfbf7;
+            --crema-tarjeta: #ffffff;
+            --oro: #c5a059;
+            --oro-hover: #b38f46;
+            --texto-oscuro: #334155;
+            --texto-claro: #f8fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Georgia', 'Times New Roman', serif;
+        }
+
+        body {
+            background-color: var(--crema-fondo);
+            color: var(--texto-oscuro);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--azul-oscuro);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 3px solid var(--oro);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: var(--texto-claro);
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .logo span {
+            color: var(--oro);
+        }
+
+        nav a {
+            color: var(--texto-claro);
+            text-decoration: none;
+            margin-left: 20px;
+            font-family: sans-serif;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--oro);
+        }
+
+        .page-title-banner {
+            background-color: var(--azul-medio);
+            color: var(--texto-claro);
+            padding: 50px 0;
+            text-align: center;
+            border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+        }
+
+        .page-title-banner h1 {
+            color: var(--texto-claro);
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+
+        .page-title-banner p {
+            color: var(--oro);
+            font-style: italic;
+            font-size: 1.1rem;
+        }
+
+        .bio-section {
+            padding: 60px 0;
+        }
+
+        .bio-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 50px;
+        }
+
+        .bio-text p {
+            margin-bottom: 20px;
+            font-family: 'Georgia', serif;
+            font-size: 1.1rem;
+            text-align: justify;
+            color: #1e293b;
+        }
+
+        .bio-text h3 {
+            margin: 30px 0 15px 0;
+            color: var(--azul-oscuro);
+            font-size: 1.4rem;
+            border-left: 4px solid var(--oro);
+            padding-left: 10px;
+        }
+
+        .bio-sidebar {
+            text-align: center;
+        }
+
+        .bio-img {
+            width: 100%;
+            border-radius: 8px;
+            border: 4px solid var(--oro);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .quote-box {
+            background-color: #f1f5f9;
+            padding: 25px;
+            border-radius: 8px;
+            font-style: italic;
+            border-left: 4px solid var(--azul-oscuro);
+            text-align: left;
+            margin-top: 20px;
+            font-size: 0.95rem;
+        }
+
+        .back-box {
+            margin-top: 40px;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 20px;
+        }
+
+        .btn-back {
+            background-color: var(--azul-oscuro);
+            color: var(--texto-claro);
+            padding: 10px 20px;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-size: 0.9rem;
+            border-radius: 4px;
+            transition: background 0.3s;
+            display: inline-block;
+        }
+
+        .btn-back:hover {
+            background-color: var(--oro);
+            color: var(--azul-oscuro);
+        }
+
+        footer {
+            background-color: #0b111e;
+            color: #64748b;
+            padding: 20px 0;
+            font-size: 0.9rem;
+            font-family: sans-serif;
+            text-align: center;
+            border-top: 1px solid #1e293b;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .bio-grid {
+                grid-template-columns: 1fr;
+            }
+            .bio-sidebar {
+                grid-row: 1;
+                max-width: 320px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">Adrián <span>Cruz</span></div>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="biografia.html" class="active">Biografía</a>
+                <a href="index.html#programa">El Programa</a>
+                <a href="index.html#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-title-banner">
+        <div class="container">
+            <h1>Perfil Artístico</h1>
+            <p>Trayectoria, formación y experiencia orquestal</p>
+        </div>
+    </div>
+
+    <section class="bio-section">
+        <div class="container">
+            <div class="bio-grid">
+                
+                <div class="bio-text">
+                    <p>
+                        <strong>Adrián Cruz</strong> es un destacado flautista peruano enfocado en la música académica. Realizó sus estudios profesionales en la <strong>Universidad Nacional de Música del Perú</strong>, formándose bajo la tutela de los maestros César Peredo, Ricardo Maldonado (en la sección preparatoria) y Pedro Alfaro (en el nivel superior).
+                    </p>
+                    <p>
+                        Su formación e interpretación se han enriquecido sustancialmente en clases maestras con renombrados flautistas internacionales como Vincent Touzet (Francia), Rebecca Blau (Suiza), Alejandro Lavanderos (Chile), Jean-Philippe Grometto (Francia) y Samuel Casale (Francia), además de especializarse en la interpretación histórica y ejecución del traverso barroco junto al maestro Sergio Portilla.
+                    </p>
+
+                    <h3>Experiencia Orquestal</h3>
+                    <p>
+                        Con una notable trayectoria en el ámbito orquestal, se desempeña actualmente como <strong>Flautista Principal de la Orquesta Sinfónica de Lima</strong>. Anteriormente, ha ocupado la misma posición de liderazgo y alta responsabilidad en las orquestas sinfónicas de la Escuela de Música Tempo, RyR Academy y la Orquesta Sinfónica del Británico.
+                    </p>
+                    <p>
+                        Asimismo, ha integrado activamente las agrupaciones principales de su casa de estudios, destacando en la Orquesta Sinfónica y la Orquesta de Cámara de la Universidad Nacional de Música.
+                    </p>
+
+                    <h3>Presentaciones y Festivales</h3>
+                    <p>
+                        Como solista e integrante de diversas agrupaciones de cámara, ha participado consecutivamente en el renombrado <strong>Festival Internacional de Flautistas</strong> organizado por el maestro César Vivanco. Su calidad interpretativa lo ha llevado a pisar las salas de concierto y auditorios más importantes del Perú, incluyendo el Gran Teatro Nacional, el Teatro Municipal de Lima, el Auditorio del Británico y el Auditorio de la UNM, recibiendo siempre el reconocimiento de la crítica y el público.
+                    </p>
+
+                    <div class="back-box">
+                        <a href="index.html" class="btn-back">&larr; Volver al Inicio</a>
+                    </div>
+                </div>
+
+                <div class="bio-sidebar">
+                    <img src="_MG_0017.jpg" alt="Adrián Cruz - Flautista Profesional" class="bio-img">
+                    <div class="quote-box">
+                        "La música académica exige un equilibrio perfecto entre la precisión técnica del aire y la profunda expresividad del alma."
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Adrián Cruz. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
