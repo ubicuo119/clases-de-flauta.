@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases de Flauta Traversa - Adrián Cruz</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+        body {
+            background-color: #fcfbf9;
+            color: #1e2530;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #0f1a2c;
+            color: #f7f4eb;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 3px solid #d4af37;
+        }
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+        }
+        .nav-container h1 {
+            font-size: 24px;
+            color: #d4af37;
+            margin-bottom: 10px;
+        }
+        nav a {
+            color: #f7f4eb;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        nav a:hover, nav a.active {
+            color: #d4af37;
+        }
+        .hero {
+            background: linear-gradient(rgba(15, 26, 44, 0.85), rgba(15, 26, 44, 0.85)), url('_MG_0013.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 36px;
+            color: #d4af37;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 18px;
+            max-width: 80px0px;
+            margin: 0 auto 30px auto;
+        }
+        .cta-btn {
+            display: inline-block;
+            background-color: #d4af37;
+            color: #0f1a2c;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background 0.3s;
+        }
+        .cta-btn:hover {
+            background-color: #b8952e;
+            color: white;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .grid {
+            display: block;
+            margin-top: 20px;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            border-left: 5px solid #d4af37;
+        }
+        .card h3 {
+            color: #0f1a2c;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+        .profile-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .profile-img {
+            max-width: 300px;
+            width: 100%;
+            border-radius: 50%;
+            border: 5px solid #d4af37;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #0f1a2c;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+            border-top: 3px solid #d4af37;
+        }
+        footer p {
+            margin-bottom: 15px;
+        }
+        .social-links a {
+            color: #d4af37;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <h1>Adrián Cruz — Flautista</h1>
+            <nav>
+                <a href="index.html" class="active">Inicio</a>
+                <a href="biografia.html">Biografía</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>Aprende Flauta Traversa con un Profesional</h2>
+        <p>Clases particulares personalizadas para todos los niveles, desde principiantes hasta preparación avanzada. Modalidad presencial en Lima y virtual.</p>
+        <a href="https://wa.me/51999999999" class="cta-btn" target="_blank">Reserva tu Clase de Prueba</a>
+    </section>
+
+    <div class="container">
+        <div class="profile-section">
+            <img src="_MG_0013.jpg" alt="Adrián Cruz" class="profile-img">
+            <h2>Adrián Cruz</h2>
+            <p style="font-style: italic; color: #666;">Flautista Principal de la Orquesta Sinfónica de Lima</p>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h3>👥 Niveles y Metodología</h3>
+                <p>Las clases se adaptan a tus objetivos e intereses musicales. Trabajamos técnica, sonoridad, lectura musical y repertorio clásico o popular, asegurando un avance constante y motivador tanto para niños como para adultos.</p>
+            </div>
+
+            <div class="card">
+                <h3>📍 Modalidades y Horarios</h3>
+                <p><strong>Presencial:</strong> Clases personalizadas en Lima con todas las comodidades didácticas.<br>
+                <strong>Virtual:</strong> Clases online optimizadas con excelente audio y conectividad desde cualquier parte del mundo.<br>
+                <em>Horarios flexibles acordes a tu disponibilidad.</em></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Adrián Cruz. Todos los derechos reservados.</p>
+        <div class="social-links">
+            <a href="https://wa.me/51999999999" target="_blank">WhatsApp</a> | 
+            <a href="mailto:tu-correo@email.com">Correo</a> | 
+            <a href="https://instagram.com/tu-usuario" target="_blank">Instagram</a>
+        </div>
+    </footer>
+
+</body>
+</html>
